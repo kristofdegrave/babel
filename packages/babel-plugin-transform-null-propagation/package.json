@@ -1,0 +1,18 @@
+{
+  "name": "babel-plugin-transform-null-propagation",
+  "version": "6.16.0",
+  "description": "Turns a conditional memberaccess into a normal member acces with an undefine check.",
+  "repository": "https://github.com/babel/babel/tree/master/packages/babel-plugin-transform-null-propagation",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "keywords": [
+    "babel-plugin"
+  ],
+  "dependencies": {
+    "babel-types": "^6.13.0",
+    "babel-runtime": "^6.0.0"
+  },
+  "devDependencies": {
+    "babel-helper-plugin-test-runner": "^6.8.0"
+  }
+}

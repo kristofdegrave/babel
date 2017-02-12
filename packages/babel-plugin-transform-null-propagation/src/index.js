@@ -2,7 +2,7 @@ export default function ({ types: t }) {
   return {
     visitor: {
       MemberExpression(path) {
-        if (!path.node.conditional) {
+        if (!path.node.object.nullPropagation) {
           return;
         }
         path.replaceWith(

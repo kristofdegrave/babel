@@ -1,6 +1,6 @@
-# babel-plugin-transform-conditional-member-access
+# babel-plugin-transform-null-propagation
 
-Turn a conditional memberaccess into a normal member acces with an undefine check.
+null propagation allows you to access object that can be null of undefined without craching on it.
 
 ```
 var a = x?.y;
@@ -13,7 +13,7 @@ var a = x === undefined ? undefined : x.y;
 ## Installation
 
 ```sh
-$ npm install babel-plugin-transform-conditional-member-access
+$ npm install babel-plugin-transform-null-propagation
 ```
 
 ## Usage
@@ -31,13 +31,13 @@ $ npm install babel-plugin-transform-conditional-member-access
 ### Via CLI
 
 ```sh
-$ babel --plugins transform-conditional-member-access script.js
+$ babel --plugins transform-null-propagation script.js
 ```
 
 ### Via Node API
 
 ```javascript
 require("babel-core").transform("code", {
-  plugins: ["transform-conditional-member-access"]
+  plugins: ["transform-null-propagation"]
 });
 ```
